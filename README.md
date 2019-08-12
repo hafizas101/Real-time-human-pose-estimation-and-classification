@@ -14,7 +14,7 @@ OpenPose is a very efficient library in terms of running time and accuracy becau
 1. Video from the USB camera is processed frame by frame. Some preprocessing steps are done on each frame which include: resizing image in term of reducing calculation complexity, blurring by gaussian kernel for reducing the noise. <br/>
 2. We are using BODY_25 model of OpenPose and hence the frame processed by the pretrained OpenPose deep neural network stored in caffe format and this algorithm returns 25 possible key points (if finds) for each person in the order shown in the following figure.
 <p align="center">
-  <img width="300" height="450" src="https://github.com/hafizas101/Real-time-human-pose-estimation-and-classification/blob/master/images/body%2025.png">
+  <img width="300" height="400" src="https://github.com/hafizas101/Real-time-human-pose-estimation-and-classification/blob/master/images/body%2025.png">
 </p>
 3. Based on coordinates of key points and geometrical structure of human being, we recognize the pose as either 'hello', 'stop', 'sitting' and 'standing' using the proposed rule based approach.<br/>
 4. The same process is repeated for the next frame.<br/>
@@ -36,4 +36,8 @@ For the recognition of other two poses we use hip, knee and ankle keyoints for b
 <p align="center">
   <img width="400" height="350" src="https://github.com/hafizas101/Real-time-human-pose-estimation-and-classification/blob/master/images/sit-stand.png">
 </p>
-
+## Video Demo
+The video demo of our project is shown below:
+<p align="center">
+  <img width="760" height="432" src="https://github.com/hafizas101/Real-time-human-pose-estimation-and-classification/blob/master/video-demo/video_demo.mp4">
+</p>
