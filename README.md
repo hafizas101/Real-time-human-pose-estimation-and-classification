@@ -5,14 +5,15 @@ OpenPose is a very efficient library in terms of running time and accuracy becau
 <p align="center">
   <img width="400" height="300" src="https://github.com/hafizas101/Real-time-human-pose-estimation-and-classification/blob/master/images/openpose_vs_competition.png">
 </p>
+
 ### Methodology
 
 <p align="center">
-  <img width="1142" height="234" src="https://github.com/hafizas101/Real-time-human-pose-estimation-and-classification/blob/master/images/block%20dia.png">
+  <img width="1142" height="225" src="https://github.com/hafizas101/Real-time-human-pose-estimation-and-classification/blob/master/images/block%20dia.png">
 </p>
--Video from the USB camera is processed frame by frame. Some preprocessing steps are done on each frame which include:
+1.Video from the USB camera is processed frame by frame. Some preprocessing steps are done on each frame which include:
 resizing image in term of reducing calculation complexity, blurring by gaussian kernel for reducing the noise.
--We are using [BODY_25](https://github.com/CMU-Perceptual-Computing-Lab/openpose/blob/master/doc/output.md) model of OpenPose and hence the frame processed by the pretrained OpenPose deep neural network stored in caffe format and this algorithm returns 25 possible key points (if finds) for each person in this specific order:
+2.We are using [BODY_25](https://github.com/CMU-Perceptual-Computing-Lab/openpose/blob/master/doc/output.md) model of OpenPose and hence the frame processed by the pretrained OpenPose deep neural network stored in caffe format and this algorithm returns 25 possible key points (if finds) for each person in this specific order:
 'Nose', 'Neck', 'R-Shoulder', 'R-Elbow', 'R-Wrist', 'L-Shoulder', 'L-Elbow', 'L-Wrist', 'Mid-Hip, ‘R-Hip', 'R-Knee', 'R-Ankle', 'L-Hip', 'L-Knee', 'L-Ankle', 'R-Eye', 'L-Eye', 'R-Ear', 'L-Ear', ‘L-Bigtoe’, ‘L-Smalltoe’, ‘L-Heel’, ‘R-Bigtoe’, ‘R-Smalltoe’, ‘R-Heel’, ‘Background’.
--Based on coordinates of key points and geometrical structure of human being, we recognize the pose as either 'hello', 'stop', 'sitting' and 'standing' using the proposed rule based approach.
--The same process is repeated for the next frame.
+3.Based on coordinates of key points and geometrical structure of human being, we recognize the pose as either 'hello', 'stop', 'sitting' and 'standing' using the proposed rule based approach.
+4.The same process is repeated for the next frame.
