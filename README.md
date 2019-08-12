@@ -3,5 +3,9 @@ This repository explains how OpenPose can be used for human pose estimation and 
 ## Why OpenPose ?
 OpenPose is a very efficient library in terms of running time and accuracy because other algorithms fail when number of people in the image is increased. The below figure  shows comparative performance of OpenPose with two other state of the art pose estimation libraries which are [AlphaPose](https://github.com/MVIG-SJTU/AlphaPose) and [Mask R-CNN](https://github.com/matterport/Mask_RCNN). AlphaPose performs good when there are less than 5 people in the image but as the number of people increase, it becomes computationally expensive.
 <p align="center">
-  <img width="500" height="400" src="https://github.com/hafizas101/Real-time-human-pose-estimation-and-classification/blob/master/images/openpose_vs_competition.png">
+  <img width="400" height="300" src="https://github.com/hafizas101/Real-time-human-pose-estimation-and-classification/blob/master/images/openpose_vs_competition.png">
+</p>
+## Methodology
+<p align="center">
+  <img width="200" height="350" src="https://github.com/hafizas101/Real-time-human-pose-estimation-and-classification/blob/master/images/methodology.png">
 </p>
