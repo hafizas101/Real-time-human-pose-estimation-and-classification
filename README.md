@@ -36,8 +36,3 @@ For the recognition of other two poses we use hip, knee and ankle keyoints for b
 <p align="center">
   <img width="400" height="350" src="https://github.com/hafizas101/Real-time-human-pose-estimation-and-classification/blob/master/images/sit-stand.png">
 </p>
-## Video Demo
-The video demo of our project is shown below:
-<p align="center">
-  <img width="760" height="432" src="https://github.com/hafizas101/Real-time-human-pose-estimation-and-classification/blob/master/video-demo/video_demo.mp4">
-</p>
