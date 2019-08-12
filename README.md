@@ -7,5 +7,5 @@ OpenPose is a very efficient library in terms of running time and accuracy becau
 </p>
 ## Methodology
 <p align="center">
-  <img width="1142" height="234" src="https://github.com/hafizas101/Real-time-human-pose-estimation-and-classification/blob/master/images/block diagram.png">
+  <img width="1142" height="230" src="https://github.com/hafizas101/Real-time-human-pose-estimation-and-classification/blob/master/images/block diagram.png">
 </p>
